@@ -1,0 +1,2 @@
+This is a seperate script that is not connected to the others. After collecting dataset we were loading the images into this script,
+and got resized, rotated and flipped images ready for being labeled. Amanda did this so that is wy the path is differnt.

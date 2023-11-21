@@ -1,0 +1,7 @@
+The main.py script is where our main code is running. Here we are using Deep sorting
+by pytorch and object detection by YOLOV8 for detecting and counting cattle.
+We learnt how to use yolov8 in this github and youtube video:
+https://github.com/computervisioneng/train-yolov8-custom-dataset-step-by-step-guide/blob/master/google_colab/TrainYolov8CustomDataset.ipynb
+But we did not get the result we was looking for, because the boxes around cattle was flashing, so we instead write a code where we included tracking from
+this github:
+https://github.com/AarohiSingla/Tracking-and-counting-Using-YOLOv8-and-DeepSORT/tree/main/deep_sort

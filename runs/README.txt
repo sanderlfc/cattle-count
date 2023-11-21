@@ -1,0 +1,1 @@
+The run folder contains a detect folder with different trainings we have done with YOLOV8.
