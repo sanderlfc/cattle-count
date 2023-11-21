@@ -6,13 +6,13 @@ import cv2
 from ultralytics import YOLO
 
 # Path to the DeepSort model weights:
-ds_model_weights = '/Users/dd/ikt213g23h/assignments/solutions/mainprosjekt/deep_sort/deep/checkpoint/ckpt.t7'
+ds_model_weights = '/Users/dd/ikt213g23h/assignments/solutions/cattle-count/deep_sort/deep/checkpoint/ckpt.t7'
 
 # DeepSort tracker initialization:
 ds_tracker = DeepSort(model_path=ds_model_weights, max_age=70)
 
 # Loading input video:
-video = '/Users/dd/ikt213g23h/assignments/solutions/mainprosjekt/video/cow.mp4'
+video = '/Users/dd/ikt213g23h/assignments/solutions/cattle-count/video/cow.mp4'
 capture = cv2.VideoCapture(video)
 
 video_output = '{}_out.mp4'.format(video)
@@ -49,7 +49,7 @@ while capture.isOpened():
         og_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         frame = og_frame.copy()
 
-        model2 = YOLO('/Users/dd/ikt213g23h/assignments/solutions/mainprosjekt/runs/detect/train39/weights/last.pt')
+        model2 = YOLO('/Users/dd/ikt213g23h/assignments/solutions/cattle-count/runs/detect/train39/weights/last.pt')
         # Perform object detection using YOLO
         detection_results = model2(frame, device='cpu', classes=0, conf=0.5)
         classes = ['cattle']

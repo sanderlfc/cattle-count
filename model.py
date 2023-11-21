@@ -5,7 +5,7 @@ from ultralytics import YOLO
 #First we uesd linemodel = YOLO("yolov8n.yaml")
 #Then we load the trained model to train it bettet again.
 # Load a model
-model = YOLO('/Users/dd/ikt213g23h/assignments/solutions/mainprosjekt/runs/detect/train38/weights/best.pt')#load trainedmodel
+model = YOLO('/Users/dd/ikt213g23h/assignments/solutions/cattle-count/runs/detect/train38/weights/best.pt')#load trainedmodel
 
 
 
